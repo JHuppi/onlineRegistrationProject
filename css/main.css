@@ -1,0 +1,139 @@
+* {
+  font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 95%;
+}
+
+header {
+  background-color: steelblue;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#signup {
+  font-size: 90%;
+  border-bottom: medium solid;
+}
+
+#formContain {
+  text-align: left;
+  display: block;
+}
+
+fieldset {
+  border: none;
+  margin-top: 1em;
+}
+
+#contact,
+#letter {
+  border-top: thin solid;
+  margin-top: 2px;
+}
+
+#contact label {
+  color: #222;
+  margin: 7.5px 0;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  background-color: #ddd; 
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid steelblue;
+  background-color: #fff;
+  transition: background-color 2s;
+}
+
+input[type=radio]:checked,
+input[type=checkbox]:checked {
+  background: steelblue;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+select,
+textarea {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 7.5px 0;
+}
+
+[placeholder] {
+  text-align: right;
+  font-weight: 300;
+  font-style: italic;
+}
+
+select,
+button {
+  font-family: 'Merriweather', serif;
+}
+
+#zipCode {
+  width: 7em;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: teal;
+  color: white;
+}
+
+footer {
+  color: gray;
+  font-style: italic;
+}
+
+@media (min-width: 760px) {
+  #wrapper {  
+    width: 50%;
+  }
+  
+  #contact label {
+    width: 25%;
+    display: inline-block;
+  }
+
+  #contact input:not(#zipCode),
+  #contact select{
+    width: 74%;
+    display: inline-block;
+  }
+}
